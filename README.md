@@ -1,6 +1,41 @@
 
 # Welcome to your CDK Python project!
 
+
+Prerequisite before installing CDK
+1. Install python in your system
+2. Install node.js which has npm in built 
+
+-command to install CDK
+-------------------------------
+    npm install -g aws-cdk
+    cdk --version
+-------------------------------
+
+-command to create cdk project
+-----------------------------------
+    cdk init app --language=python
+-----------------------------------
+
+-command to install dependencies
+-------------------------------------
+    pip install -r requirements.txt
+-------------------------------------
+
+
+*Before deploying aws resources, setup your aws account connection in VScode
+
+command to bootstrap your cdk in your aws account
+--------------------------------------------------------
+    cdk bootstrap --profile {your aws profile name}
+--------------------------------------------------------
+
+command to deploy your aws resources
+------------------------------------------------------
+    cdk deploy --profile {your aws profile name}
+------------------------------------------------------
+
+
 This is a blank project for CDK development with Python.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
